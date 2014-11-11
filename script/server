@@ -1,0 +1,5 @@
+#!/bin/bash
+
+set -e
+
+exec ngircd --config ngircd.conf --nodaemon --passive
