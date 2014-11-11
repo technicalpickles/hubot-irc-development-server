@@ -5,3 +5,7 @@ set -e
 if ! which -s ngircd; then
   brew install ngircd
 fi
+
+if !(echo $PATH | grep '/usr/local/sbin') ; then
+    echo "You don't have /usr/local/sbin/ in your $PATH, you should add it so the server script will work"
+fi
